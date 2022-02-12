@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Animas-Ss/Aplicacion-Clima/static/css/main.4c622927.css",
+    "main.js": "/Animas-Ss/Aplicacion-Clima/static/js/main.91c2d832.js",
+    "static/media/waterball.png": "/Animas-Ss/Aplicacion-Clima/static/media/waterball.e2c0bd8d2aeed4d3d4ed.png",
+    "static/media/landscape.jpg": "/Animas-Ss/Aplicacion-Clima/static/media/landscape.2e80a15e0e3b8e577ca8.jpg",
+    "static/media/lawn.jpg": "/Animas-Ss/Aplicacion-Clima/static/media/lawn.e293e5f1df5204864354.jpg",
+    "index.html": "/Animas-Ss/Aplicacion-Clima/index.html",
+    "main.4c622927.css.map": "/Animas-Ss/Aplicacion-Clima/static/css/main.4c622927.css.map",
+    "main.91c2d832.js.map": "/Animas-Ss/Aplicacion-Clima/static/js/main.91c2d832.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c622927.css",
+    "static/js/main.91c2d832.js"
+  ]
+}
