@@ -1,38 +1,207 @@
-.App {
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #1e2432;
+  height: 100%;
+  margin: 0;
+}
+
+.cabeza-contenedora {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)),
+    url("../public/image/landscape.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cabeza-contenedora-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)),
+    url("../public/image/waterball.png");
+  background-size: cover;
+  background-position: center;
+}
+.cabeza-contenedora-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)),
+    url("../public/image/lawn.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cabeza-contenedora {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cabeza-contenedora-2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cabeza-contenedora-3 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buscador {
+  outline: none;
+  padding: 20px 7%;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 1%;
+  background: rgba(250, 250, 250, 0.85);
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+.ciudad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 8%;
+
+  border-radius: 20px;
+  background: rgba(250, 250, 250, 0.6);
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+.ciudad-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 8%;
+
+  border-radius: 20px;
+  background: rgba(29, 28, 28, 0.6);
+  box-shadow: 10px 10px 5px 0px rgba(111, 60, 192, 0.508);
+}
+.ciudad-2 p {
+  font-family: "Kalam", cursive;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: aqua;
+}
+.ciudad p {
+  font-family: "Kalam", cursive;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.fecha-actual {
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  color: #fff;
+  padding: 3px;
+  width: 200px;
+  margin-bottom: 1%;
+  text-align: center;
+  border-radius: 3em;
+  background: rgba(29, 28, 28, 0.6);
+  box-shadow: 10px 10px 5px 0px rgba(241, 240, 243, 0.508);
+}
+.ciudad-2 .ciudad-temperatura {
+  font-family: "Kalam", cursive;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: #dcdcf3;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ciudad .ciudad-temperatura {
+  font-family: "Kalam", cursive;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: #1e2432;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ciudad-2 .ciudad sup {
+  font-size: 0.5em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ciudad .ciudad sup {
+  font-size: 0.5em;
+}
+.ciudad-2 .ciudad-nombre {
+  font-size: 2em;
+  font-family: "Kalam", cursive;
+  padding: 0 0 0 0.3em;
+  margin: 0;
+  color: #dcdcf3;
+}
+.ciudad .ciudad-nombre {
+  font-size: 2em;
+  font-family: "Kalam", cursive;
+  padding: 0 0 0 0.3em;
+  margin: 0;
+}
+.ciudad-2 .ciudad-nombre sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #706f9e;
+}
+.ciudad .ciudad-nombre sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #3633dd;
+}
+.ciudad-2 .ciudad-humedad {
+  display: flex;
+  font-family: "Kalam", cursive;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  color: #706f9e;
+}
+.ciudad .ciudad-humedad {
+  display: flex;
+  font-family: "Kalam", cursive;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+.ciudad-2 .ciudad-humedad span {
+  padding: 1rem;
+}
+.ciudad .ciudad-humedad span {
+  padding: 1rem;
+}
+/*para modificar el icono que optenemos cuando buscamos el clima , el cual es buscado mediente la infomracion optenida de la posicion de un array*/
+.ciudad-icono {
+  margin-top: 0px;
+  width: 100px;
+  height: 100px;
+}
+.ciudad-2 .informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.ciudad .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .buscador {
+    padding: 20px 15%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .ciudad {
+    padding: 40px 20%;
   }
 }
